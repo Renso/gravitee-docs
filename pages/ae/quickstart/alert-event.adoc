@@ -1,0 +1,47 @@
+---
+sidebar: ae_sidebar
+permalink: ae_quickstart_event.html
+folder: ae/quickstart
+description: Gravitee Alert Engine - Event
+toc: false
+keywords: Gravitee, API Platform, Alert, Alert Engine, documentation, manual, guide, reference, api
+---
+
+= Event
+
+Then we can push events with this structure:
+
+|===
+|Field Name |Field Description
+
+|timestamp
+|Timestamp of event
+
+|context
+|Context of event (KV Map)
+
+|type
+|Type of the event
+
+|event
+|Event properties (KV Map)
+|===
+
+
+```json
+{
+    "timestamp": 1538473393,
+    "context": {
+        "IP": "127.0.0.1",
+        "Port": "8082"
+    },
+    "type": "HC",
+    "props": {
+        "API": "",
+        "Endpoint": "",
+        "Old status": "",
+        "New status": "",
+        ...
+    }
+}
+```
